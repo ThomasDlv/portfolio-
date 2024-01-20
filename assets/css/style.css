@@ -4,41 +4,37 @@
     box-shadow: none;
 }
 
+html {
+    scroll-behavior: smooth;
+    font-family: "Roboto Light", sans-serif;
+}
+
 body {
     background-color: #0e0e0e;
     color: white;
 }
 
-.container-sneakers {
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.sections {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.card {
-    width: 300px;
-    border: 1px solid #DDD;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+#s1 {
+    background-color: #d00707;
 }
 
-.card-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+#s2 {
+    background-color: #00f8f8;
 }
 
-.card-content {
-    padding: 15px;
-}
-
-.card-title {
-    margin-bottom: 10px;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.card-description {
-    color: #d9d9d9;
-    font-size: 16px;
+#s3 {
+    background-color: #7803c5;
 }

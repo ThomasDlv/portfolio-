@@ -1,16 +1,26 @@
+#nav {
+    display: flex;
+    width: 100%;
+    overflow: auto;
+    justify-content: center;
+}
+
 .navbar {
-    background-color: #333; /* change color as per your requirement */
+    position: fixed;
+    display: flex;
+    border-radius: 15px;
+    justify-content: space-between;
+    background-color: #333;
     overflow: hidden;
-    position: fixed; /* Make the navbar sticky */
-    top: 0;
-    width: 100%; /* Full width */
+    width: 50%;
+    margin: 2em 0;
 }
 
 .navbar a {
-    float: left;
-    display: block;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     color: #f2f2f2;
-    text-align: center;
     padding: 14px 20px;
     text-decoration: none;
     font-size: 17px;
@@ -24,4 +34,12 @@
 .navbar a.active {
     background-color: #4CAF50;
     color: white;
+}
+
+.scroll-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
